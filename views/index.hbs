@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<p>Logged in:
+  {{#if logged_in}}
+    <span>true</span>
+  {{else}}
+    <span>false</span>
+  {{/if}}</p>
+
+<form action='/login' method='post'>
+  <button type='submit'>Login</button>
+</form>
